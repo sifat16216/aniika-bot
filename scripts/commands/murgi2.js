@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "murgi",
+	name: "m",
 	version: "1.0.2",
 	permission: 2,
 	credits: "nayan",
@@ -92,4 +92,4 @@ setTimeout(() => {a("~ আমার পুত। জা ভাগ🤖")} , 39000
 
 
   
-  }
+	}
