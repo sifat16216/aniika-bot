@@ -13,13 +13,13 @@ module.exports.run = async function({
     try {
       var tpk = `🖼️=== [ REMOVING BACKGROUND ] ===🖼️
 ━━━━━━━━━━━━━━━
-[⚜️]➜ Api By MOHAMMAD NAYAN`;
+[⚜️]➜ Api By 🤖Senior Apu🤖`;
         if (event.type !== "message_reply") return api.sendMessage("[⚜️]➜ You must reply to a photo", event.threadID, event.messageID);
         if (!event.messageReply.attachments || event.messageReply.attachments.length == 0) return api.sendMessage("[⚜️]➜ You must reply to a photo", event.threadID, event.messageID);
         if (event.messageReply.attachments[0].type != "photo") return api.sendMessage("[⚜️]➜ This is not an image", event.threadID, event.messageID);
 
         const content = (event.type == "message_reply") ? event.messageReply.attachments[0].url : args.join(" ");
-        const KeyApi = ["qReKoWSpkMAi2vbi6RUEHctA","ho37vvCUppqTKcyfjbLXnt4t","ytr2ukWQW2YrXV8dshPbA8cE"]
+        const KeyApi = ["n1v43nqx8Px49gjRucgBMYhL","QJDwg5aVjxfbguVTYcwTf6YJ"]
         const inputPath = path.resolve(__dirname, 'cache', `photo.png`);
          await image({
         url: content, dest: inputPath
