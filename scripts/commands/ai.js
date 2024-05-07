@@ -1,18 +1,16 @@
-
-module.exports = {
-  config: {
-  name: "ai",
-  version: "1.0.0",
-  permission: 0,
-  credits: "Nayan",
-  description: "",
-  prefix: true, 
-  category: "user", 
-  usages: "query",
-  cooldowns: 5,
-  dependencies: {
-    "nayan-server": ''
-   }
+module.exports.config = {
+    name: "ssk",
+    version: "1.0.0",
+    hasPermssion: 2,
+    credits: "...",
+    description: "5 বারের জন্য ক্রমাগত বন্ধুর ট্যাগ ট্যাগ করুন\nসেই ব্যক্তিকে আত্মা কলিং বলা যেতে পারে",
+    commandCategory: "nsfw",
+    usages: " please @mention",
+    cooldowns: 10,
+    dependencies: {
+        "fs-extra": "",
+        "axios": ""
+    }
 }
 
 module.exports.run = async function({ api, args, Users, event}) {
