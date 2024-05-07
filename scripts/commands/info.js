@@ -19,29 +19,16 @@ module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOB
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-const time = process.uptime(),
-                hours = Math.floor(time / (60 * 60)),
-                minutes = Math.floor((time % (60 * 60)) / 60),
-                seconds = Math.floor(time % 60);
-const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-
-var callback = () => api.sendMessage({body:`
---------------------------------------------
-𝐍𝐚𝐦𝐞       : 𝐓𝐨𝐡𝐢𝐝𝐮𝐥 𝐈𝐬𝐥𝐚𝐦 𝐒𝐢𝐟𝐚𝐭
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐓𝐨𝐡𝐢𝐝𝐮𝐥 𝐈𝐬𝐥𝐚𝐦 𝐒𝐢𝐟𝐚𝐭
-𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
-𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐊𝐡𝐚𝐠𝐫𝐚𝐜𝐡𝐡𝐫𝐢
-𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐅𝐞𝐧𝐢
-𝐆𝐞𝐧𝐝𝐞𝐫.   : 𝐌𝐚𝐥𝐞
-𝐀𝐠𝐞           : 𝟏𝟖+
-𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : 𝐒𝐢𝐧𝐠𝐥𝐞
-𝐖𝐨𝐫𝐤        : 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
-𝐆𝐦𝐚𝐢𝐥       : tohidulislamsifat1@gmail.com
-𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801*5*7*7*3*
-𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/Roboinhood
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/tohidul.islam.sifat.xyz`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
-    fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100014020217824/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
-fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
+var link =["https://telegra.ph/file/134aa0794eb61c9c8fdb9.jpg", 
+            
+            "https://telegra.ph/file/480f341ab86adfefea332.jpg", 
+            
+"https://telegra.ph/file/f4bcd1d69989d695701a1.jpg",
+            
+            "https://telegra.ph/file/735999ddb32ef9b1f65be.jpg"];
+  
+var callback = () => api.sendMessage({body:`........\n
+------------------------------------------------\n𝗡𝗮𝗺𝗲       : 𝐓𝐨𝐡𝐢𝐝𝐮𝐥 𝐈𝐬𝐥𝐚𝐦 𝐒𝐢𝐟𝐚𝐭\n𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 : 𝐓𝐨𝐡𝐢𝐝𝐮𝐥 𝐈𝐬𝐥𝐚𝐦 𝐒𝐢𝐟𝐚𝐭\n𝗥𝗲𝗹𝗶𝗴𝗶𝗼𝗻    : (𝗜𝘀𝗹𝗮𝗺)\n𝗣𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : (𝐊𝐡𝐚𝐠𝐫𝐚𝐜𝐡𝐡𝐫𝐢)\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 :𝐅𝐞𝐧𝐢, 𝘽𝙖𝙣𝙜𝙡𝙖𝙙𝙚𝙨𝙝\n𝗚𝗲𝗻𝗱𝗲𝗿     : (𝗠𝗮𝗹𝗲)\n𝗔𝗴𝗲            :  (𝟏𝟖+)\n𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀𝗵𝗶𝗽 : (𝗦𝗶𝗻𝗴𝗹𝗲)\n𝗪𝗼𝗿𝗸         : 𝙎𝙩𝙪𝙙𝙮\n𝗚𝗺𝗮𝗶𝗹        :  tohidulislamsifat1@gmail.com\n𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 :  wa.me/+8801*5*7*7*3*\n𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺  : t.me/Roboinhood\n𝗙𝗯 𝗹𝗶𝗻𝗸   : https://www.facebook.com/tohidul.islam.sifat.xyz
+`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
