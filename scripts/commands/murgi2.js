@@ -18,6 +18,16 @@ module.exports.run = async function({ api, args, Users, event}) {
         arraytag.push({id: mention, tag: name});
     var a = function (a) { api.sendMessage(a, event.threadID); }
 a("চুদা লো");
+setTimeout(() => {a({body: "সুদানীর ফোয়া " + " " + name, mentions: arraytag})}, 36000);
+setTimeout(() => {a({body: "হালা হানকির ফোয়া " + " " + name, mentions: arraytag})}, 39000);
+setTimeout(() => {a({body: "তোর জাতের মারে চুদি " + " " + name, mentions: arraytag})}, 35000);
+setTimeout(() => {a({body: "তোর আজান দিয়ইন্নার মারে চুদি " + " " + name, mentions: arraytag})}, 38000);
+setTimeout(() => {a({body: "তোরে যে টানি বাহির গইজ্জে ইতের মারে চুদি " + " " + name, mentions: arraytag})}, 39000);
+setTimeout(() => {a({body: "কামলা মাগীর ফোয়া " + " " + name, mentions: arraytag})}, 36000);
+setTimeout(() => {a({body: "মাঙ্গের নাতি " + " " + name, mentions: arraytag})}, 36000);
+setTimeout(() => {a({body: "তোর মার হেডা দি তোরে আবার ভরি দিয়ুম " + " " + name, mentions: arraytag})}, 46000);
+setTimeout(() => {a({body: "মাগীর দালাল " + " " + name, mentions: arraytag})}, 36000);
+setTimeout(() => {a({body: "তোর মারে কুত্তা দিয়েনে চুদাইয়ুম " + " " + name, mentions: arraytag})}, 33000);
 setTimeout(() => {a({body: "খাংকির পোলা তর মারে চুদি 🥰।" + " " + name, mentions: arraytag})}, 3000);
 setTimeout(() => {a({body: "খাংকির পোলা তর কচি বোন রে চুদি 😍.." + " " + name, mentions: arraytag})}, 5000);
 setTimeout(() => {a({body: "মাদারচোদ তর আম্মু পম পম খাংকির পো 🐰" + " " + name, mentions: arraytag})}, 7000);
